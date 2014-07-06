@@ -1,0 +1,57 @@
+Configure Git
+
+First, you’ll need to fire up terminal and install Git onto your system.  If you’ve never done this before, head on over to Github.com. They have a pretty great tutorial, written here: https://help.github.com/articles/set-up-git
+
+Once you’ve installed Git, head back into terminal and tell Git your user credentials:
+$git config --global user.name "alan tippins"
+$git config --global user.email "alan@29thdrive.com"
+
+
+Setup a repo
+
+In order to create and setup your first repository, open up terminal and navigate to the directory where you have stored your in-progress site files.
+
+Example:
+$cd sites/29thdrive
+
+
+Once you’ve navigated to your site’s directory, type:
+
+$git init
+
+
+Now, add your files to your repo:
+$git add . 
+
+The “.” signifies all files.
+
+If you want to check and see what Git will push out to your repo, use the status command:
+$git status
+
+Commit Your Changes
+$git commit -am "test commit"
+
+This commit command tells Git to log/commit these changes into the repository.  -am allows a comment to be added to the commit. For the purposes of this demo, the comment I’ve logged above isn’t very descriptive. For larger projects, or when you’re working with more than one developer, it’s very helpful to be specific about the issues/fixes you are checking in.
+
+Now that your files are checked in, if you later decide to try changing the whole site from a light theme to a dark theme and then end up changing your mind again, you can always roll back to this commit point.
+
+When in doubt initiate a pull request!
+
+This is especially important on collaborative projects in which you might be working on separate portions of a site with another developer.  By pulling, you can be sure you always have the latest committed code. To do this, type:
+$git pull
+
+When your code is ready to be stored back on Github…
+
+Initiate a push command, by typing:
+$git push
+
+For additional information on Git and Git commands, check these out:
+
+Git Quick Reference
+GitRef
+GIT Tutorial: Commands
+
+</end GitHub 101>
+
+You now should have the basics of working with both a GUI interface or the command line in order to create a repository, add to a repo, commit files, and pushing and pulling to Git.
+- See more at: http://29thdrive.com/blog/intro-to-github-for-designers-using-a-gui-or-command-line/#sthash.6bAolWMt.dpuf

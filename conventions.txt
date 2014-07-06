@@ -1,0 +1,11 @@
+speach lines are with brush hardness 050 and 3 px.
+
+Narrator is boxed. border 2 px and then shrink once.
+
+letter spacing is 0.9
+
+Text is VTC size 16
+
+gnomophobia.com uses MS Sans Serif size 10
+
+panels are 320 x 320, set in renderer
