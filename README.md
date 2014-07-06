@@ -2,3 +2,6 @@ gnomophobia
 ===========
 
 Gnomophobia comic.
+
+edit
+
