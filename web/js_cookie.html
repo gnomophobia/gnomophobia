@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sample Cookie Web Page</title>
+<script language="JavaScript">
+	cookie_name = "Basic_Cookie";
+		function write_cookie() {
+			if(document.cookie) {
+				index = document.cookie.indexOf(cookie_name);
+			} else {
+				index = -1;
+			}
+			
+			if (index == -1) {
+				document.cookie=cookie_name+"=1; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
+			} else {
+				countbegin = (document.cookie.indexOf("=", index) + 1);
+				countend = document.cookie.indexOf(";", index);
+				if (countend == -1) {
+					countend = document.cookie.length;
+				}
+				count = eval(document.cookie.substring(countbegin, countend)) + 1;
+				document.cookie=cookie_name+"="+count+"; expires=Wednesday, 01-Aug-2040 08:00:00 GMT";
+		}
+	}
+	function gettimes() {
+		if(document.cookie) {
+			index = document.cookie.indexOf(cookie_name);
+			if (index != -1) {
+				countbegin = (document.cookie.indexOf("=", index) + 1);
+				countend = document.cookie.indexOf(";", index);
+				if (countend == -1) {
+					countend = document.cookie.length;
+				}
+				count = document.cookie.substring(countbegin, countend);
+				if (count == 1) {
+					return (count+" time");
+				} else {
+					return (count+" times");
+				}
+			}
+		}
+		return ("Reload the page to find out...");
+	}
+	function reset_cookie() {
+		if(document.cookie) {
+			document.cookie=cookie_name+"=0; expires=Thu, 01-Jan-1970 00:00:01 GMT";
+		}
+		alert("The page will now reload...");
+		window.location.reload();
+	}
+</script>
+
+</head>
+
+<body>
+<h1>Sample HTML Cookie</h1>
+<p><a href="#" onclick="write_cookie();">Click this link</a></p>
+<h3>How Many Times Did You Click the Link?</h3>
+<p><script language="javascript">document.write(gettimes());</script></p>
+<p><a href="#" onclick="reset_cookie();">Reset the count</a></p>
+<p>This page stores the number of times the first link was clicked in a cookie. Every time you return to this page, the cookie will keep count of how many times you clicked it until you click on the second link, resetting the count.</p>
+<p>You can learn how to add cookies to your web page on the About.com article: <a href="http://webdesign.about.com/od/cookies/a/aa083198.htm">Write Your First HTTP Cookie</a>.</p>
+</body>
+</html>
+
