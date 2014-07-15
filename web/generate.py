@@ -10,6 +10,7 @@ f1 = open("titles.txt", "r")
 titles1 = f1.readlines()
 f1.close
 
+# write web pages
 pos = 0
 while True:
   l = titles1[pos]
@@ -34,20 +35,22 @@ while True:
     images = images + "[[controls]]\n"
     ins = 2
 
-  template2 = template2.replace("[[title]]", "Gnomophobia:" + l.replace("_", " "))
+  template2 = template2.replace("[[title]]", l.replace("_", " "))
   template2 = template2.replace("[[images]]", images)
   c = ""
   if pos == 0:
     prev = titles1[0]
   else:
     prev = titles1[pos - 1]
-  c = c + '<div><span class="button1"><a href="' + prev + '.html">< previous</a></span>'
-  c = c + '<span class="button1">[index]</span> '
+  #c = c + '<div id="t0">\n'
+  c = c + '<a href="' + prev + '.html"><img src="btnLeft1.png"/></a>\n'
+  c = c + '<a href="toc.html"><img src="btnIndex1.png"/></a>\n '
   if pos == (len(titles1) - 1):
     nxt = titles1[len(titles1) - 1]
   else:
     nxt = titles1[pos + 1]
-  c = c + '<span class="button1"><a href="' + nxt + '.html">next ></a></span></div>'
+  c = c + '<a href="' + nxt + '.html"><img src="btnRight1.png"/></a>\n'
+  #c = c + '</div>\n'
 
   template2 = template2.replace("[[controls]]", c)
   template2 = template2.replace("[[advert]]", '<div><img alt="advertisement" src="advertisement.png"></div>')
@@ -60,8 +63,31 @@ while True:
   pos = pos + 1
   if pos == len(titles1):
     break
- 
 
 f1.close()
 
+# write index
+template2 = template1
+template2 = template2.replace("[[title]]", "Gnomophobia Index")
+anchors = ""
+episodes = ""
+num_eps = 25
+
+pos = 0
+while True:
+  l = titles1[pos]
+  l = l.strip()
+  episodes = episodes + '<p><a href="' + l + '.html">' + l.replace("_"," ") + '</a></p>\n'
+  if (pos % num_eps) == 0 & pos > 0:
+    anchors = anchors + '<p><a href="#season' + str(pos/num_eps) + '">Season ' + str(pos/num_eps) + '</a></p>\n'
+    episodes = episodes + '<p><a name="season' + str(pos/num_eps) + '">Season ' + str(pos/num_eps) + '</a></p>\n'
+  pos = pos + 1
+  if pos == len(titles1):
+    break
+
+template2 = template2.replace("[[images]]", '<div id="toc">' + anchors + '<br/><br/>' + episodes + '</div>')
+
+f2 = open("toc.html", "w")
+f2.write(template2)
+f2.close()
 

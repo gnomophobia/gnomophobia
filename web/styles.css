@@ -5,66 +5,21 @@ html, body, img, div {
 }
 
 body { 
-  background-color: #000; 
+  background-color: #666; 
+ font-family: Courier, "Lucida Console", monospace ; 
+background-image: url(bg1.png); background-repeat: repeat;
 }
 #main {
   width: 320px;
   max-width: 1000px;
-  background-color:#000;
+  background-color:#666;
   margin: 0 auto;
   padding: 0;
 }
-.button1 {
-  width: 106px;
-  height: 50px;
-}
-#t0 {
-  width: 320px;
-  height: 50px;
-  margin: 0 auto;
-  background-color: #ccc;
-  border-style:solid;
-}
-#t1 {
-  width: 300px;
-  height: 50px;
-  margin: 0 auto;
-  background-color: #bff;
-  border-style: solid 1px #000;
-}
-#t2 {
-  float:left;
-  width: 100px;
-  height: 50px;
-  margin: 0 auto;
-  display: inline;
-  background-color: #fff;
-  text-align: center;
-vertical-align: middle;
-line-height: 50px;
-border-style: solid ;
-}
-#t3 {
-  float:left;
-  width: 100px;
-  height: 50px;
-  margin: 0 auto;
-  display: inline;
-  background-color: #fff;
-  text-align: center;
-vertical-align: middle;
-line-height: 50px;
-border: 5px solid #0060c0;
+#toc a:link {text-decoration: none; color:#ccc;}
+#toc a:visited {text-decoration: none; color:#aaa;}
+#toc a:hover {text-decoration: underline; color:#c00;}
+#toc {
+  padding: 15px;
 }
 
-#t4 {
-  float:left;
-  width: 100px;
-  height: 50px;
-  margin: 0 auto;
-  display: inline;
-  background-color: #fff;
-  text-align: center;
-vertical-align: middle;
-line-height: 50px;
-}
