@@ -5,21 +5,73 @@ html, body, img, div {
 }
 
 body { 
+  color: #fff;
   background-color: #666; 
  font-family: Courier, "Lucida Console", monospace ; 
 background-image: url(bg1.png); background-repeat: repeat;
 }
+a:link {text-decoration: none; color:#8cf;}
+a:visited {text-decoration: none; color:#e8f;}
+a:hover {text-decoration: underline; color:#c00;}
 #main {
   width: 320px;
   max-width: 1000px;
-  background-color:#666;
   margin: 0 auto;
-  padding: 0;
 }
-#toc a:link {text-decoration: none; color:#ccc;}
-#toc a:visited {text-decoration: none; color:#aaa;}
-#toc a:hover {text-decoration: underline; color:#c00;}
 #toc {
   padding: 15px;
+  background-color: #666; 
+}
+
+#tip_jar {
+  margin: 20px 0px;
+  float:left;
+  display:inline;
+}
+#follow {
+  margin: 20px 0px;
+  float:left;
+  display:inline;
+  background-color: #666; 
+}
+.follow_btn {
+  vertical-align: middle;
+  line-height: 40px;
+
+  height: 40px;
+  width: 120px;
+}
+#tee_shirt {
+  margin: 20px 0px;
+  height:160px;
+  width:160px;
+  float:left;
+  display:inline;
+}
+#amazon {
+  margin: 20px 0px;
+  height:160px;
+  width:160px;
+  float:left;
+  display:inline;
+  background-color: #666; 
+}
+.menu1 {
+  height:30px;
+  width:80px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  float:left;
+  display:inline;
+  background-color: #666; 
+
+}
+#pad {
+  height:1600px;
+  width:320px;
+}
+#method1 b {
+display:none;
 }
 

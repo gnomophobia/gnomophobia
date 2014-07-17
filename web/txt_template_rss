@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <rss version="2.0">
+ <channel>
+ <title>Gnomophobia RSS Feed</title>
+ <link>http://gnomophobia.com</link>
+ <description>This is Gnomophobia.com's rss feed used to notify subscribers of new comics.</description>
+<image>
+<title>Gnomophobia.com</title>
+<url>http://gnomophobia.com/rss_image.com</url>
+<link>http://gnomophobia.com/rss/</link>
+<width>320</width>
+<height>320</height>
+</image>
+
+[[rss]]]
+ 
+ </channel>
+ </rss>
