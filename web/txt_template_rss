@@ -6,13 +6,13 @@
  <description>This is Gnomophobia.com's rss feed used to notify subscribers of new comics.</description>
 <image>
 <title>Gnomophobia.com</title>
-<url>http://gnomophobia.com/rss_image.com</url>
+<url>http://gnomophobia.com/rss_image.png</url>
 <link>http://gnomophobia.com/rss/</link>
 <width>320</width>
 <height>320</height>
 </image>
 
-[[rss]]]
+[[rss]]
  
  </channel>
  </rss>

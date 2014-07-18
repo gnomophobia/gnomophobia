@@ -9,18 +9,17 @@ f0.close
 f1 = open("txt_titles", "r")
 titles1 = f1.readlines()
 f1.close
+titles1 = map(lambda s: s.strip(), titles1)
 
 # write web pages
 pos = 0
 while True:
-  l = titles1[pos]
-  l = l.strip()
   template2 = template1
   images = ""
   ins = 0
   p = 0
   for file in os.listdir("."):
-    if file.startswith(l + "_"):
+    if file.startswith(titles1[pos] + "_"):
       t1 = file.split('.')
       # print t1[0] #+ t2[len(t2) - 1]
       images = images + '<div><img alt="' +  t1[0].replace("_", " ") + '" src="' + file + '"/></div>\n'
@@ -35,7 +34,7 @@ while True:
     images = images + "[[controls]]\n"
     ins = 2
 
-  template2 = template2.replace("[[title]]", l.replace("_", " "))
+  template2 = template2.replace("[[title]]", titles1[pos].replace("_", " "))
   template2 = template2.replace("[[images]]", images)
   c = ""
   if pos == 0:
@@ -43,21 +42,22 @@ while True:
   else:
     prev = titles1[pos - 1]
   #c = c + '<div id="t0">\n'
-  c = c + '<a href="' + prev + '.html"><img src="btnLeft1.png"/></a>\n'
-  c = c + '<a href="toc.html"><img src="btnIndex1.png"/></a>\n '
+  c = c + '<a href="' + prev + '.html"><img alt="Button left." src="btnLeft1.png"/></a>\n'
+  c = c + '<a href="toc.html"><img alt="Button index." src="btnIndex1.png"/></a>\n '
   if pos == (len(titles1) - 1):
     nxt = titles1[len(titles1) - 1]
   else:
     nxt = titles1[pos + 1]
-  c = c + '<a href="' + nxt + '.html"><img src="btnRight1.png"/></a>\n'
+  c = c + '<a href="' + nxt + '.html"><img alt="Button right." src="btnRight1.png"/></a>\n'
   #c = c + '</div>\n'
 
   template2 = template2.replace("[[controls]]", c)
   template2 = template2.replace("[[advert]]", '<div><img alt="advertisement" src="advertisement.png"></div>')
+  template2 = template2.replace("[[page]]", titles1[pos] + ".html")
 
   #l = l.rstrip('\n')
   #print(images)
-  f2 = open(l + ".html", "w")
+  f2 = open(titles1[pos] + ".html", "w")
   f2.write(template2)
   f2.close()
   pos = pos + 1
@@ -107,7 +107,7 @@ item1 = """<item>
  <description>[[description]]</description>
  <guid>http://gnomophobia.com/[[guid]]</guid>
  </item>
- <item>"""
+ """
 for title in reversed(titles1):
   title = title.strip()
   item2 = item1
@@ -122,3 +122,4 @@ template1 = template1.replace("[[rss]]", rss)
 f1 = open("rss.xml", "w")
 f1.write(template1)
 f1.close()
+
