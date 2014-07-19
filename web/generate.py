@@ -36,27 +36,31 @@ while True:
 
   template2 = template2.replace("[[title]]", titles1[pos].replace("_", " "))
   template2 = template2.replace("[[images]]", images)
-  c = ""
+  c = '''
+  <a href="[[prev]].html"><img alt="Left button." src="[[lButton]].png"/></a>
+  <a href="toc.html"><img alt="Button index." src="btnIndex1.png"/></a>
+  <a href="[[nxt]].html"><img alt="Right button." src="[[rButton]].png"/></a>
+  '''
   if pos == 0:
     prev = titles1[0]
+    lbutton = "btnLeftBoop1"
   else:
     prev = titles1[pos - 1]
-  #c = c + '<div id="t0">\n'
-  c = c + '<a href="' + prev + '.html"><img alt="Button left." src="btnLeft1.png"/></a>\n'
-  c = c + '<a href="toc.html"><img alt="Button index." src="btnIndex1.png"/></a>\n '
+    lbutton = "btnLeft1"
   if pos == (len(titles1) - 1):
     nxt = titles1[len(titles1) - 1]
+    rbutton = "btnRightBoop1"
   else:
     nxt = titles1[pos + 1]
-  c = c + '<a href="' + nxt + '.html"><img alt="Button right." src="btnRight1.png"/></a>\n'
-  #c = c + '</div>\n'
-
+    rbutton = "btnRight1"
+  c = c.replace("[[prev]]", prev)
+  c = c.replace("[[lButton]]", lbutton)
+  c = c.replace("[[nxt]]", nxt)
+  c = c.replace("[[rButton]]", rbutton)
   template2 = template2.replace("[[controls]]", c)
   template2 = template2.replace("[[advert]]", '<div><img alt="advertisement" src="advertisement.png"></div>')
   template2 = template2.replace("[[page]]", titles1[pos] + ".html")
 
-  #l = l.rstrip('\n')
-  #print(images)
   f2 = open(titles1[pos] + ".html", "w")
   f2.write(template2)
   f2.close()
