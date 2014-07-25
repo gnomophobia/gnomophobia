@@ -15,12 +15,12 @@ a:visited {text-decoration: none; color:#e8f;}
 a:hover {text-decoration: underline; color:#c00;}
 #main {
   width: 320px;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
-  background-color: #666; 
 }
 #toc {
   padding: 15px;
+  background-color: #666; 
 }
 
 #tip_jar {
@@ -70,53 +70,5 @@ a:hover {text-decoration: underline; color:#c00;}
 #pad {
   height:1600px;
   width:320px;
-}
-#credits {
-  padding: 15px;
-}
-
-@media screen and (max-width: 1152px) {
-}
-@media screen and (max-width: 1024px) {
-}
-
-@media screen and (max-width: 1000px) {
-}
-
-@media screen and (max-width: 720px) {
-}
-
-@media screen and (max-width: 590px) {
-}
-
-@media screen and (max-width: 580px) {
-}
-
-@media screen and (max-width: 480px) {
-}
-
-@media screen and (width: 480px) and (orientation: landscape) {
-}
-
-@media screen and (max-width: 479px) {
-}
-
-@media screen and (max-width: 440px) {
-}
-
-@media screen and (max-width: 400px) {
-}
-
-@media screen and (max-width: 380px) {
-}
-
-@media screen and (max-width: 320px) {
-}
-
-@media screen and (max-width: 250px) {
-}
-
-@media screen and (max-width: 220px) {
-
 }
 

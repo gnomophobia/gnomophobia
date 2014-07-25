@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 import os
+import os.path
 
 f0 = open("txt_template_pages", "r")
 template1 = f0.read()
@@ -18,6 +19,7 @@ while True:
   images = ""
   ins = 0
   p = 0
+  article = ""
   for file in os.listdir("."):
     if file.startswith(titles1[pos] + "_"):
       t1 = file.split('.')
@@ -60,7 +62,12 @@ while True:
   template2 = template2.replace("[[controls]]", c)
   template2 = template2.replace("[[advert]]", '<div><img alt="advertisement" src="advertisement.png"></div>')
   template2 = template2.replace("[[page]]", titles1[pos] + ".html")
-
+  if os.path.isfile(titles1[pos] + ".txt"):
+    f0 = open(titles1[pos] + ".txt", "r")
+    article = f0.read()
+    f0.close
+    article = "<div>" + article + "</div>"
+  template2 = template2.replace("[[article]]", article)
   f2 = open(titles1[pos] + ".html", "w")
   f2.write(template2)
   f2.close()
