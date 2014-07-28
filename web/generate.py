@@ -11,7 +11,16 @@ f1 = open("txt_titles", "r")
 titles1 = f1.readlines()
 f1.close
 titles1 = map(lambda s: s.strip(), titles1)
-
+googleAd = '''<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- googBanner1 -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:320px;height:50px"
+     data-ad-client="ca-pub-4299622749166172"
+     data-ad-slot="1869871849"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>'''
+ 
 # write web pages
 pos = 0
 while True:
@@ -60,7 +69,8 @@ while True:
   c = c.replace("[[nxt]]", nxt)
   c = c.replace("[[rButton]]", rbutton)
   template2 = template2.replace("[[controls]]", c)
-  template2 = template2.replace("[[advert]]", '<div><img alt="advertisement" src="advertisement.png"></div>')
+  # template2 = template2.replace("[[advert]]", '<div><img alt="advertisement" src="advertisement.png"></div>')
+  template2 = template2.replace("[[advert]]",googleAd) 
   template2 = template2.replace("[[page]]", titles1[pos] + ".html")
   if os.path.isfile(titles1[pos] + ".txt"):
     f0 = open(titles1[pos] + ".txt", "r")

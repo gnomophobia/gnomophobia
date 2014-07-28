@@ -1,7 +1,7 @@
 <h3>Review of Rift: Planes of Telara MMO</h3>
 <p>TL;DR: It's free to play, download it and try it.  There's nothing to lose.  It's a decent game and the free to play model isn't as punitive as some free to plays, meaning you won't have to spend money to be effective.  Personally I've never been able to get to max level in Rift although I've tried three times, but you might like it, many do.</p>
 
-<p>Lars Buttler and Jon Canegham left their jobs, Lars at Electronic Arts and Jon at NCSoft with the idea of starting a new game company that would focus on MMOs,they named their new company Trion.  Trion's first product was Trion Platform, a proprietary server side game engine. In 2006 they started work on what would become their first MMO, Rift.</p>
+<p>Lars Buttler and Jon Canegham left their jobs, Lars at Electronic Arts and Jon at NCSoft with the idea of starting a new game company that would focus on MMOs,they named their new company Trion.  Trion's first product was Trion Platform, a proprietary server side game engine. In 2006 they started work on what would become their first MMO, <a href="http://www.riftgame.com/en/play-for-free/">Rift</a>.</p>
 
 <p>Big investors in Trion are Time Warner and Comcast.</p>
 <p>Upon release in 2011, Rift received generally favorable reviews from all the major review sites, 8 out of 10 or 80% ratings were common.  It was said that it sold 11 million copies, some even deemed it a "WoW killer."</p>
