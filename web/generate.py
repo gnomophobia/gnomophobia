@@ -96,16 +96,16 @@ template2 = template1
 template2 = template2.replace("[[title]]", "Gnomophobia Index")
 anchors = ""
 episodes = ""
-num_eps = 25
+num_eps = 24
 
 pos = 0
 while True:
   l = titles1[pos]
   l = l.strip()
+  if (pos % num_eps) == 0: 
+    anchors = anchors + '<p><a href="#season' + str(1+pos/num_eps) + '">Season ' + str(1+pos/num_eps) + '</a></p>\n'
+    episodes = episodes + '<p><a name="season' + str(1+pos/num_eps) + '">Season ' + str(1+pos/num_eps) + '</a></p>\n'
   episodes = episodes + '<p><a href="' + l + '.html">' + l.replace("_"," ") + '</a></p>\n'
-  if (pos % num_eps) == 0 & pos > 0:
-    anchors = anchors + '<p><a href="#season' + str(pos/num_eps) + '">Season ' + str(pos/num_eps) + '</a></p>\n'
-    episodes = episodes + '<p><a name="season' + str(pos/num_eps) + '">Season ' + str(pos/num_eps) + '</a></p>\n'
   pos = pos + 1
   if pos == len(titles1):
     break

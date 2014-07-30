@@ -9,3 +9,17 @@ Text is VTC size 16
 gnomophobia.com uses MS Sans Serif size 10
 
 panels are 320 x 320, set in renderer
+
+materials to shadeless
+
+freestyle edges contour lines
+
+chmod 644 * to ./web
+
+update txt_template_titles
+
+generat.py
+
+rsync -chavzP ~/docs/Blender/gnomophobia/web/* usr1@162.248.98.95:/var/www/.
+
+update facebook, twitter
