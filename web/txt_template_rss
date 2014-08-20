@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
- <rss version="2.0">
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0">
  <channel>
  <title>Gnomophobia RSS Feed</title>
  <link>http://gnomophobia.com</link>

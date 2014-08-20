@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
- <rss version="2.0">
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0">
  <channel>
  <title>Gnomophobia RSS Feed</title>
  <link>http://gnomophobia.com</link>
@@ -13,6 +14,42 @@
 </image>
 
 <item>
+ <title>Minecraft XXVIII</title>
+ <link>http://gnomophobia.com/Minecraft_XXVIII.html</link>
+ <description>Another quality episode of Gnomophobia</description>
+ <guid>http://gnomophobia.com/Minecraft_XXVIII.html</guid>
+ </item>
+ <item>
+ <title>Minecraft XXVII</title>
+ <link>http://gnomophobia.com/Minecraft_XXVII.html</link>
+ <description>Another quality episode of Gnomophobia</description>
+ <guid>http://gnomophobia.com/Minecraft_XXVII.html</guid>
+ </item>
+ <item>
+ <title>Minecraft XXVI</title>
+ <link>http://gnomophobia.com/Minecraft_XXVI.html</link>
+ <description>Another quality episode of Gnomophobia</description>
+ <guid>http://gnomophobia.com/Minecraft_XXVI.html</guid>
+ </item>
+ <item>
+ <title>Minecraft XXV</title>
+ <link>http://gnomophobia.com/Minecraft_XXV.html</link>
+ <description>Another quality episode of Gnomophobia</description>
+ <guid>http://gnomophobia.com/Minecraft_XXV.html</guid>
+ </item>
+ <item>
+ <title>Minecraft XXIV</title>
+ <link>http://gnomophobia.com/Minecraft_XXIV.html</link>
+ <description>Another quality episode of Gnomophobia</description>
+ <guid>http://gnomophobia.com/Minecraft_XXIV.html</guid>
+ </item>
+ <item>
+ <title>Minecraft XXIII</title>
+ <link>http://gnomophobia.com/Minecraft_XXIII.html</link>
+ <description>Another quality episode of Gnomophobia</description>
+ <guid>http://gnomophobia.com/Minecraft_XXIII.html</guid>
+ </item>
+ <item>
  <title>Minecraft XXII</title>
  <link>http://gnomophobia.com/Minecraft_XXII.html</link>
  <description>Another quality episode of Gnomophobia</description>

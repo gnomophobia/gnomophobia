@@ -34,7 +34,8 @@
     <a href="http://twitter.com/gnomophobia"><img alt="twitter" src="btn_twitter.png"/> Twitter</a>
   </div>
   <div class="follow_btn">
-    <a href="http://gnomophobia.com/rss.xml"><img alt="rss" src="btn_rss.png"/> RSS</a>
+    <a href="http://feeds.feedburner.com/GnomophobiaRssFeed"><img alt="rss" src="btn_rss.png"/> RSS</a>
+    <!-- <a href="http://gnomophobia.com/rss.xml"><img alt="rss" src="btn_rss.png"/> RSS</a> -->
   </div>
 </div>
 <div>
