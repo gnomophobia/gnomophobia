@@ -26,13 +26,14 @@ pos = 0
 while True:
   template2 = template1
   images = ""
+  # add patreon ad
+  images = '<div><a href="http://www.patreon.com/gnomophobia"><img alt="Patreon banner." src="patreon_banner.png"/></a></div>\n'
   ins = 0
   p = 0
   article = ""
-  for file in os.listdir("."):
+  for file in sorted(os.listdir(".")):
     if file.startswith(titles1[pos] + "_"):
       t1 = file.split('.')
-      # print t1[0] #+ t2[len(t2) - 1]
       images = images + '<div><img alt="' +  t1[0].replace("_", " ") + '" src="' + file + '"/></div>\n'
       if ins == 0:
         images = images + "[[advert]]\n"
