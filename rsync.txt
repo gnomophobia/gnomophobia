@@ -1,0 +1,1 @@
+rsync -chavP * username@ip:/var/www/.
