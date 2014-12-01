@@ -1264,3 +1264,22 @@ Ballpeen chants a spell, touching Snips
 s05e22p03
 
 Snips: I can see.
+
+###
+
+s05e23p01
+
+Snips standing.
+Snips: I can see! 
+Snips: Thank the makers! I can see!
+
+s05e23p02
+
+Snips on knees.
+Snips: Oh thank you so much elder!
+Snips: I'll quite my job and become a Junkist, embracing the principles of Junkism!
+
+s05e23p03
+
+Balpeen: We're a celibate order.
+Snips: What? Eh..
