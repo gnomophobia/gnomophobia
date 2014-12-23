@@ -1369,3 +1369,20 @@ Dipstick:  No.
 Mitzi: For real?
 Dipstick: Yeah. I'm not afraid of you or anything.
 
+###
+
+s06e15p01
+
+Mitzi is inspecting Dipstick's head injury
+Dipstick: Ow! Don't touch it.
+Mitzi: Be still, Im inspecting your head injury.
+
+s06e15p02
+
+Mitzi: Can we pleeese ask someone for directions?
+Dipstick: Okay but I don't like the way you fly into a rage and win all the time.
+
+s06e15p03
+
+Mitzi: But I was so right.
+Dipstick: Ow! Don't touch it.
