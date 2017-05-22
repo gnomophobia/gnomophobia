@@ -1,0 +1,5 @@
+-- now let's plug the function into y.
+
+Oooo, that looks promising.
+
+[show the math]

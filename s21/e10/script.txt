@@ -1,0 +1,21 @@
+[sign]
+
+"Home is where the heart is."
+
+Somehow this will tell me which tiles to step on and in which sequence.
+
+--------
+
+Good thing I brought a gnharpy.
+
+--------
+
+[Home is where the heart is on the wall]
+
+4 2 5 3 5 2
+
+So that's the number of characters in each word...
+
+Okay so the odd numbers are rows of tiles and the even numbers are which column...
+
+No that's too easy.
