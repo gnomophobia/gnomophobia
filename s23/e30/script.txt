@@ -1,0 +1,17 @@
+[general and sidz]
+
+What kind of business are you in?
+
+I buy goods from Strumwund to Gnowloon and sell them in my store.
+
+So you're a businessman?
+
+Yes that's correct.
+
+You make a lot of money?
+
+I work hard, yes.
+
+Did the guard's ever collect money from you?
+
+You mean mug me? Yes.
