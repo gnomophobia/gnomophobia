@@ -1,0 +1,5 @@
+[goblet walking down stairs]
+
+[goblet walking out door]
+
+[goblet walking across field]
