@@ -1,0 +1,9 @@
+I should go get the sheriff and have him lock you in jail. Do you want me to call the sheriff?
+
+[no]
+
+Well okay then, I'll tell you what, if you help me feed the chickens and collect the eggs I wont call the sheriff, do we have a deal?
+
+[yes]
+
+Follow me then.
