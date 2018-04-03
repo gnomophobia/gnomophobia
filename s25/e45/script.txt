@@ -1,0 +1,9 @@
+You're a goblin?
+
+[nod yes]
+
+We're at war with the goblins. Are you my enemy?
+
+[nod no]
+
+Okay. You're not my enemy either.
