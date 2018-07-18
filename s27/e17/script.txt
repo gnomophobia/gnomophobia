@@ -1,0 +1,5 @@
+[pika walking]
+
+[pika sitting down]
+
+[goblet scooping water]
